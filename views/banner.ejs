@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/public.css">
+
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="main">
+        <!-- left -->
+        <%- include("./Component/left"); %>
+        <div class="xb-right">
+            <!-- header -->
+            <%- include("./Component/header"); %>
+
+            <div class="xb-show">
+                <button type="button" class="btn btn-info " data-toggle="modal" data-target="#myModal">添加</button>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>编号</th>
+                            <th>名字</th>
+                            <th>图片</th>
+                            <th>操作</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>新木乃伊</td>
+                            <td>sadafa</td>
+                            <td><a href="">删除</a><a href="">修改</a></td>
+                        </tr>
+                        <tr>
+                            <td>1</td>
+                            <td>新木乃伊</td>
+                            <td>sadafa</td>
+                            <td><a href="">删除</a><a href="">修改</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+                <!-- 弹出框 -->
+
+                <div class="modal fade" data-target="#myModal" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+                    <div class="modal-dialog" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                                        aria-hidden="true">&times;</span></button>
+                                <h4 class="modal-title" id="myModalLabel">添加信息</h4>
+                            </div>
+                            <div class="modal-body">
+                                <!-- 弹出框提交表单 -->
+                                <div class="form-horizontal">
+                                    <div class="form-group">
+                                        <label for="inputEmail3" class="col-sm-2 control-label">名字</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="vdName" class="form-control" id="inputEmail3" placeholder="请输入电影名字">
+                                        </div>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="inputPassword3" class="col-sm-2 control-label">图片</label>
+                                        <div class="col-sm-10">
+                                            <input type="text" name="imgName" class="form-control" id="inputPassword3" placeholder="请输入图片路径">
+                                        </div>
+                                    </div>
+
+                                </div>
+                                <!-- 提交表单结束 -->
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+                                <button type="button" class="btn btn-primary" id="bannerAdd">确认添加</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 分页符 -->
+                <nav aria-label="Page navigation">
+                    <ul class="pagination pagination-lg">
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"></script>
+    <script src="/js/index.js"></script>
+</body>
+
+</html>

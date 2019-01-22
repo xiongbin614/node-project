@@ -1,3 +1,11 @@
-h1{
-    color: red;
+.xb-show table,.xb-show table th{
+    text-align: center;
 }
+.xb-show nav{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+

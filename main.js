@@ -21,7 +21,9 @@ app.use(express.static('public'));
 
 // 配置路由
 const indexRouter=require('./router/index');
+const bannerRouter = require('./router/banner');
 app.use('/', indexRouter);
+app.use('/banner', bannerRouter);
 
 
 

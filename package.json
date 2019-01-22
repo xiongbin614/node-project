@@ -4,9 +4,16 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon main.js"
   },
   "keywords": [],
   "author": "xiongbin <1490251116@qq.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.6.1",
+    "express": "^4.16.4",
+    "mongoose": "^5.4.5"
+  }
 }
