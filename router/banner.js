@@ -69,6 +69,27 @@ router.get('/get',function(req,res){
                 });
             }
     })  
+});
+// 查找banner的_id数据删除
+router.get('/remove',function(req,res){
+    console.log(req.query.name);
+    
+    // console.log(55)
+    BannerModel.find({ name: req.query.name}).remove(function(err){
+        if(err){
+            console.log("删除失败");
+            res.json({
+                code: -1,
+                msg: err.message
+            });
+        }else{
+            console.log("删除成功");
+            res.json({
+                code: 0,
+                msg: 'ok',
+            });
+        }
+    });
 })
 
 module.exports = router;

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon main.js"
+    "xb": "nodemon main.js"
   },
   "keywords": [],
   "author": "xiongbin <1490251116@qq.com>",
