@@ -1,6 +1,9 @@
 .xb-show table,.xb-show table th{
     text-align: center;
 }
+.xb-show td img{
+    height: 50px;
+}
 .xb-show nav{
     display: flex;
     justify-content: center;
