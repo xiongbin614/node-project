@@ -79,6 +79,13 @@ html,body{
     width: 100%;
     background: green;
 }
+#navHeader{
+    height: 100%;
+}
+#title{
+    color: blue;
+    font-size: 24px
+}
 .xb-header h1{
     /* margin: auto; */
     height: 100%;
