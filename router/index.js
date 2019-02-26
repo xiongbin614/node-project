@@ -3,10 +3,16 @@ const router=express.Router();
 
 // 首页
 router.get('/',function(req,res){
-    res.render('index.ejs',{
+    res.render('register.ejs',{
         h1:'用户管理'
     });
 });
+router.get('/login', function (req, res) {
+    res.render('login.ejs',{
+        h1:'用户登录'
+    }
+    )
+})
 // banner图管理
 router.get('/banner', function (req, res) {
     res.render('banner.ejs',{
@@ -25,4 +31,11 @@ router.get('/cinema', function (req, res) {
         h1: "影院管理"
     });
 });
+//用户管理 
+router.get('/admin', function (req, res) {
+    res.render('admin.ejs', {
+        h1: "用户管理"
+    });
+});
+
 module.exports=router;

@@ -93,6 +93,7 @@ router.post('/add', upload.single('bannerImg'), (req, res) => {
 
 // 查询banner数据
 router.get('/get',function(req,res){
+    res.setHeader('Access-Control-Allow-Origin','*');
     let pageNum = parseInt(req.query.pageNum) || 2;   // 当前的页数
     let pageSize = parseInt(req.query.pageSize) || 2; // 每页显示的条数
     async.parallel([
